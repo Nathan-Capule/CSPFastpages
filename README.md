@@ -6,7 +6,7 @@
 
 https://Nathan-Capule.github.io/CSPFastpages/
 
-# My Blog
+# My Blog goes here
 
 
 _powered by [fastpages](https://github.com/fastai/fastpages)_
