@@ -2,21 +2,21 @@
   
     
         "post0": {
-            "title": "Nathan has a markdown post (I hope)",
-            "content": "I guess this is my first markdown . Which would make this my second markdown . Well now that you are here, I think that it would be important to inform you that the Bee Movie is such a good movie. My favorite part was when the Bee was flying, or maybe when it was flying the plane, I’m not sure. Oh Well. .",
-            "url": "https://nathan-capule.github.io/CSPFastpages/markdown/2022/08/20/stuff.html",
-            "relUrl": "/markdown/2022/08/20/stuff.html",
-            "date": " • Aug 20, 2022"
+            "title": "Title",
+            "content": "msg = &quot;hello, it is Nathan&quot; print(msg) . hello, it is Nathan .",
+            "url": "https://nathan-capule.github.io/CSPFastpages/2022/08/21/First.html",
+            "relUrl": "/2022/08/21/First.html",
+            "date": " • Aug 21, 2022"
         }
         
     
   
     
         ,"post1": {
-            "title": "Title",
-            "content": "msg = &quot;hello, it is Nathan&quot; print(msg) . hello, it is Nathan .",
-            "url": "https://nathan-capule.github.io/CSPFastpages/2022/08/20/First.html",
-            "relUrl": "/2022/08/20/First.html",
+            "title": "Nathan has a markdown post (I hope)",
+            "content": "I guess this is my first markdown . Which would make this my second markdown . Well now that you are here, I think that it would be important to inform you that the Bee Movie is such a good movie. My favorite part was when the Bee was flying, or maybe when it was flying the plane, I’m not sure. Oh Well. If you want to see what I am talking about, here .",
+            "url": "https://nathan-capule.github.io/CSPFastpages/markdown/2022/08/20/stuff.html",
+            "relUrl": "/markdown/2022/08/20/stuff.html",
             "date": " • Aug 20, 2022"
         }
         
