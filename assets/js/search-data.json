@@ -84,6 +84,22 @@
   
 
   
+      ,"page3": {
+          "title": "About Me",
+          "content": "I learned how to make a new page. .",
+          "url": "https://nathan-capule.github.io/CSPFastpages/about/",
+          "relUrl": "/about/",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -92,18 +108,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://nathan-capule.github.io/CSPFastpages/robots.txt",
