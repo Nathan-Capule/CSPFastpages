@@ -16,7 +16,7 @@ $dt-yellow: #f1fa8c;
 $dt-green-light: rgb(172, 229, 145);
 
 .language-python + .language-plaintext {
-    border-left: 1px solid $dt-cyan;
+    border-left: 1px solid grey;
     margin-left: 1rem !important;
 }
 
@@ -27,8 +27,8 @@ $dt-green-light: rgb(172, 229, 145);
     color: $dt-gray-light;
 }
 
-.language-python + .language-plaintext code { background-color: gray !important; }
-.language-python + .language-plaintext pre  { background-color: gray !important; }
+.language-python + .language-plaintext code { background-color: white !important; }
+.language-python + .language-plaintext pre  { background-color: white !important; }
 
 // for Jupyter Notebook HTML Code Cells modified from https://www.fast.ai/public/css/hyde.css
 
@@ -37,7 +37,7 @@ $dt-green-light: rgb(172, 229, 145);
     margin-top:1.5rem !important;
     padding-bottom:0 !important;
     padding-top:0 !important;
-    background: #8be9fd !important;
+    background: #323443 !important;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
     font-family: Menlo, Monaco, Consolas, "Lucida Console", Roboto, Ubuntu, monospace;
@@ -51,10 +51,10 @@ $dt-green-light: rgb(172, 229, 145);
     padding-top:0 !important;
 }
 .input_area pre {
-    border-left: 1px solid $dt-cyan;
+    border-left: 1px solid lightcoral;
 }
 .output_area pre {
-    border-left: 1px solid $dt-cyan;
+    border-left: 1px solid grey;
     margin-left: 1rem !important;
     font-size: 16px;
 }
