@@ -1,0 +1,11 @@
+---
+toc: true
+layout: post
+description: My classes in a table
+categories: [markdown]
+title: My Class Schedule
+---
+
+|Period 1| Period 2| Period 3| Period 4| Period 5|
+|:---------:|:---------:|:---------:|:---------:|:---------:|
+|Computer Animation 1| Ethnic Lit| APCSP| Ap Physics| AP Calc BC|
