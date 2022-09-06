@@ -37,8 +37,8 @@
         ,"post3": {
             "title": "Nathan's Notebook",
             "content": "msg = &quot;hello, it is Nathan&quot; print(msg) . hello, it is Nathan .",
-            "url": "https://nathan-capule.github.io/CSPFastpages/jupyter/2022/09/05/First.html",
-            "relUrl": "/jupyter/2022/09/05/First.html",
+            "url": "https://nathan-capule.github.io/CSPFastpages/week_0/2022/09/05/First.html",
+            "relUrl": "/week_0/2022/09/05/First.html",
             "date": " • Sep 5, 2022"
         }
         
