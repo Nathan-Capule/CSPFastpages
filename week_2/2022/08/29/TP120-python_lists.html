@@ -4,23 +4,23 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Lists, Dictionaries, Iteration | Nathan’s fastpages</title>
+<title>List,Dictionaries, Iteration | Nathan’s fastpages</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="Lists, Dictionaries, Iteration" />
+<meta property="og:title" content="List,Dictionaries, Iteration" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}." />
-<meta property="og:description" content="An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}." />
-<link rel="canonical" href="https://nathan-capule.github.io/CSPFastpages/collegeboard/python_lists" />
-<meta property="og:url" content="https://nathan-capule.github.io/CSPFastpages/collegeboard/python_lists" />
+<meta name="description" content="Lists" />
+<meta property="og:description" content="Lists" />
+<link rel="canonical" href="https://nathan-capule.github.io/CSPFastpages/week_2/2022/08/29/TP120-python_lists.html" />
+<meta property="og:url" content="https://nathan-capule.github.io/CSPFastpages/week_2/2022/08/29/TP120-python_lists.html" />
 <meta property="og:site_name" content="Nathan’s fastpages" />
-<meta property="og:image" content="https://nathan-capule.github.io/CSPFastpages/images/python_lists.png" />
+<meta property="og:image" content="https://nathan-capule.github.io/CSPFastpages/images/chart-preview.png" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2022-08-29T00:00:00-05:00" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta property="twitter:image" content="https://nathan-capule.github.io/CSPFastpages/images/python_lists.png" />
-<meta property="twitter:title" content="Lists, Dictionaries, Iteration" />
+<meta property="twitter:image" content="https://nathan-capule.github.io/CSPFastpages/images/chart-preview.png" />
+<meta property="twitter:title" content="List,Dictionaries, Iteration" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}.","headline":"Lists, Dictionaries, Iteration","image":"https://nathan-capule.github.io/CSPFastpages/images/python_lists.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathan-capule.github.io/CSPFastpages/collegeboard/python_lists"},"url":"https://nathan-capule.github.io/CSPFastpages/collegeboard/python_lists"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2022-08-29T00:00:00-05:00","datePublished":"2022-08-29T00:00:00-05:00","description":"Lists","headline":"List,Dictionaries, Iteration","image":"https://nathan-capule.github.io/CSPFastpages/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://nathan-capule.github.io/CSPFastpages/week_2/2022/08/29/TP120-python_lists.html"},"url":"https://nathan-capule.github.io/CSPFastpages/week_2/2022/08/29/TP120-python_lists.html"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/CSPFastpages/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://nathan-capule.github.io/CSPFastpages/feed.xml" title="Nathan's fastpages" /><link rel="shortcut icon" type="image/x-icon" href="/CSPFastpages/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -75,20 +75,20 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Lists, Dictionaries, Iteration</h1><p class="page-description">An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-29T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">List,Dictionaries, Iteration</h1><p class="page-description">Lists</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2022-08-29T00:00:00-05:00" itemprop="datePublished">
         Aug 29, 2022
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      7 min read
+      8 min read
     
 </span></p>
 
     
       <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
       
-        <a class="category-tags-link" href="/CSPFastpages/categories/#collegeboard">collegeboard</a>
+        <a class="category-tags-link" href="/CSPFastpages/categories/#Week_2">Week_2</a>
         
       
       </p>
@@ -126,11 +126,15 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Lists,-Dictionaries,-Iteration">Lists, Dictionaries, Iteration </a>
+<ul>
 <li class="toc-entry toc-h3"><a href="#Lists-and-Dictionaries">Lists and Dictionaries </a></li>
+<li class="toc-entry toc-h3"><a href="#Alternate-methods-for-iteration---while-loop">Alternate methods for iteration - while loop </a></li>
 <li class="toc-entry toc-h3"><a href="#List-and-Dictionary-purpose">List and Dictionary purpose </a></li>
 <li class="toc-entry toc-h3"><a href="#Formatted-output-of-List/Dictionary---for-loop">Formatted output of List/Dictionary - for loop </a></li>
-<li class="toc-entry toc-h3"><a href="#Alternate-methods-for-iteration---while-loop">Alternate methods for iteration - while loop </a></li>
 <li class="toc-entry toc-h3"><a href="#Calling-a-function-repeatedly---recursion">Calling a function repeatedly - recursion </a></li>
+</ul>
+</li>
 </ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
@@ -143,6 +147,27 @@ window.onload = wrap_img;
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Lists,-Dictionaries,-Iteration">
+<a class="anchor" href="#Lists,-Dictionaries,-Iteration" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lists, Dictionaries, Iteration<a class="anchor-link" href="#Lists,-Dictionaries,-Iteration"> </a>
+</h1>
+<blockquote>
+<p>An introduction to Data Abstraction using Python Lists [] and Python Dictionaries {}.</p>
+</blockquote>
+<ul>
+<li>title:Lists, Dictionaries, Iteration- toc: true</li>
+<li>categories: [units]</li>
+<li>permalink: /collegeboard/python_lists</li>
+<li>image: /images/python_lists.png</li>
+<li>categories: [collegeboard]</li>
+<li>tags: [python]</li>
+</ul>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Lists-and-Dictionaries">
 <a class="anchor" href="#Lists-and-Dictionaries" aria-hidden="true"><span class="octicon octicon-link"></span></a>Lists and Dictionaries<a class="anchor-link" href="#Lists-and-Dictionaries"> </a>
 </h3>
@@ -151,6 +176,20 @@ window.onload = wrap_img;
 <li>Developers often think of variables as primitives or collections.  Look at this example and see if you can see hypothesize the difference between a primitive and a collection.  </li>
 <li>Take a minute and see if you can reference other elements in the list or other keys in the dictionary. Show output.</li>
 </ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Alternate-methods-for-iteration---while-loop">
+<a class="anchor" href="#Alternate-methods-for-iteration---while-loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternate methods for iteration - while loop<a class="anchor-link" href="#Alternate-methods-for-iteration---while-loop"> </a>
+</h3>
+<p>In coding, there are usually many ways to achieve the same result.  Defined are functions illustrating using index to reference records in a list, these methods are called a "while" loop and "recursion".</p>
+<ul>
+<li>The while_loop() function contains a while loop, "while i &lt; len(InfoDb):".  This counts through the elements in the list start at zero, and passes the record to print_data()</li>
+</ul>
 
 </div>
 </div>
@@ -467,20 +506,6 @@ Gene Chang
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered">
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Alternate-methods-for-iteration---while-loop">
-<a class="anchor" href="#Alternate-methods-for-iteration---while-loop" aria-hidden="true"><span class="octicon octicon-link"></span></a>Alternate methods for iteration - while loop<a class="anchor-link" href="#Alternate-methods-for-iteration---while-loop"> </a>
-</h3>
-<p>In coding, there are usually many ways to achieve the same result.  Defined are functions illustrating using index to reference records in a list, these methods are called a "while" loop and "recursion".</p>
-<ul>
-<li>The while_loop() function contains a while loop, "while i &lt; len(InfoDb):".  This counts through the elements in the list start at zero, and passes the record to print_data()</li>
-</ul>
-
-</div>
-</div>
-</div>
     
     
 <div class="cell border-box-sizing code_cell rendered">
@@ -684,7 +709,15 @@ Your answer: 16
 
 
 
-  </div><a class="u-url" href="/CSPFastpages/collegeboard/python_lists" hidden></a>
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="Nathan-Capule/CSPFastpages"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/CSPFastpages/week_2/2022/08/29/TP120-python_lists.html" hidden></a>
 </article>
 
       </div>
