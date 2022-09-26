@@ -1,6 +1,12 @@
 ---
 keywords: fastai
-title: Title
+description: Just stuff bro
+title: JavaScript Practice Stuff
+toc: true 
+badges: true
+comments: true
+categories: [Week_5]
+image: images/chart-preview.png
 nb_path: _notebooks/2022-09-25-JavaScript.ipynb
 layout: notebook
 ---
@@ -14,29 +20,6 @@ layout: notebook
 
 <div class="container" id="notebook-container">
         
-    {% raw %}
-    
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-javascript"><pre><span></span><span class="o">&gt;</span><span class="nx">Just</span> <span class="nx">stuff</span> <span class="nx">bro</span>
-
-<span class="o">-</span> <span class="nx">toc</span><span class="o">:</span> <span class="kc">true</span> 
-<span class="o">-</span> <span class="nx">badges</span><span class="o">:</span> <span class="kc">true</span>
-<span class="o">-</span> <span class="nx">comments</span><span class="o">:</span> <span class="kc">true</span>
-<span class="o">-</span> <span class="nx">categories</span><span class="o">:</span> <span class="p">[</span><span class="nx">Week_5</span><span class="p">]</span>
-<span class="o">-</span> <span class="nx">image</span><span class="o">:</span> <span class="nx">images</span><span class="o">/</span><span class="nx">chart</span><span class="o">-</span><span class="nx">preview</span><span class="p">.</span><span class="nx">png</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-    {% endraw %}
-
     {% raw %}
     
 <div class="cell border-box-sizing code_cell rendered">
