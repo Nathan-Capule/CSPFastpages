@@ -59,4 +59,4 @@ Describe purpose of code and document a lot.
 
 ---
 Here is some proof that me and my teammates noted any changes that we made as spoken about in the video.
-![]({{ site.baseurl }}/images/Proof.png "Here")
+![]({{ site.baseurl }}/images/proof.png "Here")
