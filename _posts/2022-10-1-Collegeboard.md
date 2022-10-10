@@ -43,6 +43,7 @@ CRD-2.B.3: A program needs to work for a variety of inputs and situations.
 Program is oftentimes referred to as software.
 ![]({{ site.baseurl }}/images/Mistake.png "Dang it")
 Need to read the whole thing and make sure the answer corresponds to what is necessary.
+
 ---
 1.3: Program Design and Development
 ![]({{ site.baseurl }}/images/Notes1.png "Notes I Guess")
@@ -56,6 +57,7 @@ Documentation is important to keep track of progress.
 Commenting is also important
 Comments in python are #, comments in Java Script can be // or /* or /**
 Describe purpose of code and document a lot.
+
 ---
 1.4: Identifying and Correcting Errors
 Errors are bound to happen
