@@ -6,7 +6,7 @@ categories: [Week_6]
 title: Collegeboard notes
 ---
 
-![]({{ site.baseurl }}/images/Scores.png "Notes I Guess")
+![]({{ site.baseurl }}/images/Scores2.png "Notes I Guess")
 
 ---
 
@@ -56,6 +56,16 @@ Documentation is important to keep track of progress.
 Commenting is also important
 Comments in python are #, comments in Java Script can be // or /* or /**
 Describe purpose of code and document a lot.
+---
+1.4: Identifying and Correcting Errors
+Errors are bound to happen
+Runtime error is an error made while the code is being run.
+Overflow error is when the output cannot be displayed.
+Important to identify the error.
+Logic errors are sometimes hard to discover.
+Try hand tracing.
+Try extra outputs to test errors.
+
 
 ---
 Here is some proof that me and my teammates noted any changes that we made as spoken about in the video.
