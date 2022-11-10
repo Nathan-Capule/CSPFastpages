@@ -19,6 +19,7 @@ String is reversed after so onno.
 ![]({{ site.baseurl }}/images/50.png "50")
 connect first name as first character instead.
 
+---
 
 Question 16: Messages are broken into packets and can be received in any order to be reassembled.
 ![]({{ site.baseurl }}/images/16.png "16")
