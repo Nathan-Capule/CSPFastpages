@@ -10,7 +10,7 @@ title: Collegeboard notes
 
 ---
 
-1.1: Collaboration
+# 1.1: Collaboration
 CRD - 1.A.1: A computing innovation includes a program as a part of its function.
 CRD - 1.A.2: Innovation can be physical, nonphysical, or a nonphysical computing concept.
 CRD - 1.A.3: Collaboration leads to computing innovations which show aspects of all members strengths.
@@ -21,7 +21,7 @@ Pair Programming: Driver types code, observer just watches, only helping when ne
 Leave comments in code to help others
 
 ---
-1.2: Program Function and Purpose
+# 1.2: Program Function and Purpose
 CRD-2.A.1: Computing innovations are used to solve problems
 CRD-2.A.2: Knowing the purpose for innovations can help programmers.
 For example, the computing innovation of social media is to help people keep in touch.
@@ -45,7 +45,7 @@ Program is oftentimes referred to as software.
 Need to read the whole thing and make sure the answer corresponds to what is necessary.
 
 ---
-1.3: Program Design and Development
+# 1.3: Program Design and Development
 ![]({{ site.baseurl }}/images/Notes1.png "Notes I Guess")
 ![]({{ site.baseurl }}/images/Notes2.png "Notes I Guess")
 Programmers need to think about the user when creating a program.
@@ -59,7 +59,7 @@ Comments in python are #, comments in Java Script can be // or /* or /**
 Describe purpose of code and document a lot.
 
 ---
-1.4: Identifying and Correcting Errors
+# 1.4: Identifying and Correcting Errors
 Errors are bound to happen
 Runtime error is an error made while the code is being run.
 Overflow error is when the output cannot be displayed.
@@ -98,3 +98,8 @@ Question 17: Open protocols can standardize data between different devices.
 ![]({{ site.baseurl }}/images/17.png "17")
 Question 18: The World Wide Web is linked
 ![]({{ site.baseurl }}/images/18.png "18")
+
+# Metadata
+Data that describes information of other data
+Collegeboard will start at 1
+Pre processing script in the action before it goes into the website on the browser
