@@ -106,7 +106,7 @@ casserole
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="List-Index">List Index<a class="anchor-link" href="#List-Index"> </a></h2><p>An index is an element of a string. Indices typically start with 0, but Collegeboard has the index start at 1.</p>
+<h2 id="List-Index">List Index<a class="anchor-link" href="#List-Index"> </a></h2><p>An index is an element of a string. Indices typically start with 0, but Collegeboard has the index start at 1. Note that not all languages allow you to index from the end.</p>
 
 </div>
 </div>
@@ -119,7 +119,7 @@ casserole
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">thanksgivingList</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span> <span class="c1">#In this case, the index starts at 0, but in collegeboard, the index starts at 1</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">thanksgivingList</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span> <span class="c1">#Python can also go backwards, in this case, &quot;turkey&quot; would be index -1 as the index 0 is already taken.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">thanksgivingList</span><span class="p">[</span><span class="o">-</span><span class="mi">3</span><span class="p">])</span> <span class="c1">#Python can index from the end, in this case, &quot;turkey&quot; would be index -1 and 3. </span>
 </pre></div>
 
     </div>
@@ -144,6 +144,23 @@ casserole
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Questions">Questions<a class="anchor-link" href="#Questions"> </a></h2><ul>
+<li>What is a list?</li>
+<li>What is an element</li>
+<li>What is an easy way to reference the elements in a list or string?</li>
+<li>What is an example of a string?</li>
+</ul>
+<h2 id="Hacks">Hacks<a class="anchor-link" href="#Hacks"> </a></h2><ul>
+<li>Create a list with indices </li>
+<li>Index a part of the list that you created.</li>
+<li>Try to index from the end </li>
+</ul>
+
+</div>
+</div>
+</div>
 </div>
  
 
