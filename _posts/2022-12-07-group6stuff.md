@@ -251,6 +251,343 @@ it is now number 1
 </div>
     {% endraw %}
 
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><a href="https://docs.google.com/drawings/d/1TZzAnHZKokfiZbIRr7SvFtQVZAn-R6bFRH2nz7VCXK4/edit?usp=sharing">The flowchart is here</a></p>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">random</span>
+
+<span class="c1">#sets variables for the game</span>
+<span class="n">num_guesses</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">user_guess</span> <span class="o">=</span> <span class="o">-</span><span class="mi">1</span>
+<span class="n">upper_bound</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">lower_bound</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="c1">#generates a random number</span>
+<span class="n">number</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1"># print(number)     #for testing purposes</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;I&#39;m thinking of a number between 1 and 100.&quot;</span><span class="p">)</span>
+
+<span class="c1">#Write a function that gets a guess from the user using input()</span>
+<span class="k">def</span> <span class="nf">guess</span><span class="p">():</span>
+    <span class="n">number</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&quot;guess&quot;</span><span class="p">)</span>
+    <span class="c1">#add something here</span>
+    <span class="k">return</span> <span class="n">number</span> <span class="c1">#add something here </span>
+
+<span class="c1">#Change the print statements to give feedback on whether the player guessed too high or too low</span>
+<span class="k">def</span> <span class="nf">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">guess</span><span class="p">):</span>
+    <span class="k">global</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Too low, try again! I TOTALLY BELIVE IN YOU&quot;</span><span class="p">)</span> <span class="c1">#change this</span>
+        <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">guess</span>
+        <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+    <span class="k">elif</span> <span class="nb">int</span><span class="p">(</span><span class="n">guess</span><span class="p">)</span> <span class="o">&gt;</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Too high, try again! I TOTALLY BELIVE IN YOU&quot;</span><span class="p">)</span> <span class="c1">#change this</span>
+        <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">guess</span>
+        <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">upper_bound</span><span class="p">,</span> <span class="n">lower_bound</span> <span class="o">=</span> <span class="n">guess</span><span class="p">,</span> <span class="n">guess</span>
+        <span class="k">return</span> <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span> 
+
+<span class="k">while</span> <span class="n">user_guess</span> <span class="o">!=</span> <span class="n">number</span><span class="p">:</span>
+    <span class="n">user_guess</span> <span class="o">=</span> <span class="n">guess</span><span class="p">()</span>
+    <span class="n">num_guesses</span> <span class="o">+=</span> <span class="mi">1</span>
+    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You guessed </span><span class="si">{</span><span class="n">user_guess</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+    <span class="n">lower_bound</span><span class="p">,</span> <span class="n">upper_bound</span> <span class="o">=</span> <span class="n">search</span><span class="p">(</span><span class="n">number</span><span class="p">,</span> <span class="n">user_guess</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">int</span><span class="p">(</span><span class="n">upper_bound</span><span class="p">)</span> <span class="o">==</span> <span class="nb">int</span><span class="p">(</span><span class="n">number</span><span class="p">):</span>
+        <span class="k">break</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Guess a number between </span><span class="si">{</span><span class="n">lower_bound</span><span class="si">}</span><span class="s2"> and </span><span class="si">{</span><span class="n">upper_bound</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;You guessed the number in </span><span class="si">{</span><span class="n">num_guesses</span><span class="si">}</span><span class="s2"> guesses!&quot;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>I&#39;m thinking of a number between 1 and 100.
+You guessed 0.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 0 and 100.
+You guessed 1.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 1 and 100.
+You guessed 2.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 2 and 100.
+You guessed 3.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 3 and 100.
+You guessed 4.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 4 and 100.
+You guessed 5.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 5 and 100.
+You guessed 6.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 6 and 100.
+You guessed 7.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 7 and 100.
+You guessed 8.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 8 and 100.
+You guessed 9.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 9 and 100.
+You guessed 10.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 10 and 100.
+You guessed 11.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 11 and 100.
+You guessed 12.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 12 and 100.
+You guessed 13.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 13 and 100.
+You guessed 14.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 14 and 100.
+You guessed 15.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 15 and 100.
+You guessed 16.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 16 and 100.
+You guessed 17.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 17 and 100.
+You guessed 18.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 18 and 100.
+You guessed 19.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 19 and 100.
+You guessed 20.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 20 and 100.
+You guessed 21.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 21 and 100.
+You guessed 22.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 22 and 100.
+You guessed 23.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 23 and 100.
+You guessed 24.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 24 and 100.
+You guessed 25.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 25 and 100.
+You guessed 26.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 26 and 100.
+You guessed 27.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 27 and 100.
+You guessed 28.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 28 and 100.
+You guessed 29.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 29 and 100.
+You guessed 30.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 30 and 100.
+You guessed 31.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 31 and 100.
+You guessed 32.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 32 and 100.
+You guessed 33.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 33 and 100.
+You guessed 34.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 34 and 100.
+You guessed 35.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 35 and 100.
+You guessed 36.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 36 and 100.
+You guessed 37.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 37 and 100.
+You guessed 38.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 38 and 100.
+You guessed 39.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 39 and 100.
+You guessed 40.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 40 and 100.
+You guessed 41.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 41 and 100.
+You guessed 42.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 42 and 100.
+You guessed 43.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 43 and 100.
+You guessed 44.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 44 and 100.
+You guessed 45.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 45 and 100.
+You guessed 46.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 46 and 100.
+You guessed 47.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 47 and 100.
+You guessed 48.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 48 and 100.
+You guessed 49.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 49 and 100.
+You guessed 50.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 50 and 100.
+You guessed 51.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 51 and 100.
+You guessed 52.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 52 and 100.
+You guessed 53.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 53 and 100.
+You guessed 54.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 54 and 100.
+You guessed 55.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 55 and 100.
+You guessed 56.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 56 and 100.
+You guessed 57.
+Too low, try again! I TOTALLY BELIVE IN YOU
+Guess a number between 57 and 100.
+You guessed 58.
+You guessed the number in 59 guesses!
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="3.9.3-Hacks">3.9.3 Hacks<a class="anchor-link" href="#3.9.3-Hacks"> </a></h2><ol>
+<li>calculate the middle index and create a binary tree for each of these lists<ul>
+<li>12, 14, 43, 57, 79, 80, 99</li>
+<li>92, 43, 74, 66, 30, 12, 1</li>
+<li>7, 13, 96, 111, 33, 84, 60</li>
+</ul>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+    {% raw %}
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">listOne</span> <span class="o">=</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">14</span><span class="p">,</span><span class="mi">44</span><span class="p">,</span><span class="mi">57</span><span class="p">,</span><span class="mi">79</span><span class="p">,</span><span class="mi">80</span><span class="p">,</span><span class="mi">99</span><span class="p">]</span>
+<span class="n">listTwo</span> <span class="o">=</span> <span class="p">[</span><span class="mi">92</span><span class="p">,</span><span class="mi">43</span><span class="p">,</span><span class="mi">74</span><span class="p">,</span><span class="mi">66</span><span class="p">,</span><span class="mi">30</span><span class="p">,</span><span class="mi">12</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">listThree</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">13</span><span class="p">,</span><span class="mi">96</span><span class="p">,</span><span class="mi">111</span><span class="p">,</span><span class="mi">33</span><span class="p">,</span><span class="mi">84</span><span class="p">,</span><span class="mi">60</span><span class="p">]</span>
+<span class="n">numLists</span> <span class="o">=</span> <span class="p">[</span><span class="n">listOne</span><span class="p">,</span> <span class="n">listTwo</span><span class="p">,</span> <span class="n">listThree</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numLists</span><span class="p">)):</span>
+    <span class="n">numLists</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">middle</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">numLists</span><span class="p">[</span><span class="n">x</span><span class="p">])</span><span class="o">/</span><span class="mi">2</span><span class="p">)</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The middle indices are&quot;</span><span class="p">,</span><span class="n">numLists</span><span class="p">[</span><span class="n">x</span><span class="p">][</span><span class="n">middle</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The middle indices are 57
+The middle indices are 43
+The middle indices are 60
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    {% endraw %}
+
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<ol>
+<li>Using one of the sets of numbers from the question above, what would be the second number looked at in a binary search if the number is more than the middle number?
+For the first list, the next number would be 80, for the second list the next number would be 74, and for the third list, the next number looked at would be 96.</li>
+<li><p>Which of the following lists can NOT a binary search be used in order to find a targeted value?</p>
+<p>a. ["amy", "beverly", "christian", "devin"]</p>
+<p>b. [-1, 2, 6, 9, 19]</p>
+<p>### c. [3, 2, 8, 12, 99] Because it is not sorted in order.</p>
+<p>d. ["xylophone", "snowman", "snake", "doorbell", "author"]</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="What-I-have-learned-and-how-I-can-apply-this-in-the-future">What I have learned and how I can apply this in the future<a class="anchor-link" href="#What-I-have-learned-and-how-I-can-apply-this-in-the-future"> </a></h2><p>I have learned that making flowcharts is actually very useful when coding as it can save time. This is because it can help you to form an outline for your code an lowers your chances of any human errors in coding.</p>
+
+</div>
+</div>
+</div>
 </div>
  
 
