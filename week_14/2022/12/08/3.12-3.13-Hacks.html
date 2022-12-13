@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      2 min read
+      5 min read
     
 </span></p>
 
@@ -131,7 +131,12 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Hacks">Hacks </a>
 <ul>
-<li class="toc-entry toc-h2"><a href="#3.12-Hacks">3.12 Hacks </a></li>
+<li class="toc-entry toc-h2"><a href="#3.12-Hacks">3.12 Hacks </a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#Topic-3.13-(3.B):">Topic 3.13 (3.B): </a></li>
+<li class="toc-entry toc-h3"><a href="#Topic-3.13-(3.C):">Topic 3.13 (3.C): </a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul><!--
@@ -184,9 +189,13 @@ Parameters can be used in 3 ways, those being sequences, selections, and iterati
 <a class="anchor" href="#3.12-Hacks" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.12 Hacks<a class="anchor-link" href="#3.12-Hacks"> </a>
 </h2>
 <ol>
-<li>Define <strong>procedure</strong> and <strong>parameter</strong> in your own words
-A procedure does a specific part and must be called, such as multiplying two numbers together The procedure will take in parameters and will output values.
+<li>Define <strong>procedure</strong> and <strong>parameter</strong> in your own words</li>
+</ol>
+<ul>
+<li>A procedure does a specific part and must be called, such as multiplying two numbers together The procedure will take in parameters and will output values.
 A parameter is just variables, typically found within procedures.</li>
+</ul>
+<ol>
 <li>Paste a <strong>screenshot</strong> of completion of the quiz</li>
 </ol>
 
@@ -323,6 +332,226 @@ Return values are are what is resulted once a procedure is run. Parameters are v
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Topic-3.13-(3.B):">
+<a class="anchor" href="#Topic-3.13-(3.B):" aria-hidden="true"><span class="octicon octicon-link"></span></a>Topic 3.13 (3.B):<a class="anchor-link" href="#Topic-3.13-(3.B):"> </a>
+</h3>
+<ol>
+<li>Explain, in your own words, why abstracting away your program logic into separate, modular functions is effective</li>
+</ol>
+<ul>
+<li>Abstracting a program allows the coder to understand how the code works. This helps for long pieces of code so that the coder would be able to know what each function accomplishes and it allows them to better troubleshoot any possible issues.</li>
+</ul>
+<ol>
+<li>Create a procedure that uses other sub-procedures (other functions) within it and explain why the abstraction was needed (conciseness, shared behavior, etc.)
+This is an example of a procedure having sub procedures, in this case, there are two different smaller procedures based on the size of x. This makes it easier for the coder to see their work as well as it can shorten the length of code.</li>
+</ol>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">big_function</span><span class="p">():</span>
+    <span class="n">x</span><span class="o">=</span><span class="mi">84</span>
+    <span class="k">if</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="mi">23</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">big_num</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"that is a big number"</span><span class="p">)</span>
+        <span class="n">big_num</span><span class="p">()</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">def</span> <span class="nf">small_num</span><span class="p">():</span>
+            <span class="nb">print</span><span class="p">(</span><span class="s2">"That is a small number"</span><span class="p">)</span>
+        <span class="n">small_num</span><span class="p">()</span>
+<span class="n">big_function</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>that is a big number
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">" "</span><span class="p">)</span>
+
+    <span class="n">new_words</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">word</span> <span class="o">!=</span> <span class="s2">""</span><span class="p">:</span>
+            <span class="n">new_words</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">word</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">words</span>
+
+<span class="k">def</span> <span class="nf">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="n">letter</span><span class="p">):</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="k">for</span> <span class="n">word</span> <span class="ow">in</span> <span class="n">words</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">word</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">letter</span><span class="p">):</span>
+            <span class="n">count</span> <span class="o">+=</span> <span class="mi">1</span>
+    
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="k">def</span> <span class="nf">count_words_starting_with_n_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="s2">"n"</span><span class="p">)</span>
+    
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="k">def</span> <span class="nf">count_words_starting_with_c_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">):</span>
+    <span class="n">words</span> <span class="o">=</span> <span class="n">split_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+    <span class="n">count</span> <span class="o">=</span> <span class="n">count_words_starting_with_letter</span><span class="p">(</span><span class="n">words</span><span class="p">,</span> <span class="s2">"c"</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">count</span>
+
+<span class="c1"># example usage:</span>
+<span class="n">s</span> <span class="o">=</span> <span class="s2">"I guess that I am tryna find the words in this sentence start with n or c, you know, cus thats my initials, nathan capule, yeah, its kinda obvious "</span>
+<span class="n">n_count</span> <span class="o">=</span> <span class="n">count_words_starting_with_n_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="n">c_count</span> <span class="o">=</span> <span class="n">count_words_starting_with_c_in_string</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Words starting with n:"</span><span class="p">,</span> <span class="n">n_count</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">"Words starting with c:"</span><span class="p">,</span> <span class="n">c_count</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Words starting with n: 2
+Words starting with c: 3
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Topic-3.13-(3.C):">
+<a class="anchor" href="#Topic-3.13-(3.C):" aria-hidden="true"><span class="octicon octicon-link"></span></a>Topic 3.13 (3.C):<a class="anchor-link" href="#Topic-3.13-(3.C):"> </a>
+</h3>
+<ol>
+<li>Define <font color="#ffffc2" style="font-weight: bold">procedure names</font> and <font color="#ffffc2" style="font-weight: bold">arguments</font> in your own words.
+Procedure names are just the names given to a function while arguments are the values given to a called function.</li>
+<li>Code some <font color="#ffffc2" style="font-weight: bold">procedures</font> that use <font color="#ffffc2" style="font-weight: bold">arguments</font> and <font color="#ffffc2" style="font-weight: bold">parameters</font> with Javascript and HTML (make sure they are interactive on your hacks page, allowing the user to input numbers and click a button to produce an output)<ul>
+<li>Add two numbers</li>
+<li>Subtract two numbers</li>
+<li>Multiply two numbers</li>
+<li>Divide two numbers
+<!-- function is called here --><p>var a = 13</p>
+<p>var b = 12</p>
+<p>var c = 6</p>
+<button id="enter" onclick="add(a,b)">add a and b</button> 
+<p id="result1"></p>
+<button id="enter" onclick="add(a,c)">add a and c</button> 
+<p id="result5"></p>
+<button id="enter" onclick="add(b,c)">add b and c</button> 
+<p id="result6"></p>
+<button id="enter" onclick="subtract(a,b)">subtract a and b</button> 
+<p id="result2"></p>
+<button id="enter" onclick="subtract(a,c)">subtract a and c</button> 
+<p id="result7"></p>
+<button id="enter" onclick="subtract(b,c)">subtract b and c</button> 
+<p id="result8"></p>
+<button id="enter" onclick="multiply(a,b)">multiply a and b</button> 
+<p id="result3"></p>
+<button id="enter" onclick="multiply(a,c)">multiply a and c</button> 
+<p id="result9"></p>
+<button id="enter" onclick="multiply(b,c)">multiply b and c</button> 
+<p id="result10"></p>
+<button id="enter" onclick="divide(a,b)">divide a and b</button> 
+<p id="result4"></p>
+<button id="enter" onclick="divide(a,c)">divide a and c</button> 
+<p id="result11"></p>
+<button id="enter" onclick="divide(b,c)">divide b and c</button> 
+<p id="result12"></p>
+</li>
+</ul>
+</li>
+</ol>
+<p><!-- javascript --></p>
+<script>
+    function add(a,b) {
+        document.getElementById("result1").innerHTML = a + b // math
+    }
+    function add(a,c) {
+        document.getElementById("result5").innerHTML = a + c // math
+    }
+    function add(b,c) {
+        document.getElementById("result6").innerHTML = b + c // math
+    }
+    function subtract(a,b) {
+        document.getElementById("result2").innerHTML = a - b
+    }
+    function subtract(a,c) {
+        document.getElementById("result7").innerHTML = a - c
+    }
+    function subtract(b,c) {
+        document.getElementById("result8").innerHTML = b - c
+    }
+    function multiply(a,b) {
+        document.getElementById("result3").innerHTML = a * b // math
+    }
+        function multiply(a,c) {
+        document.getElementById("result9").innerHTML = a * c // math
+    }
+        function multiply(b,c) {
+        document.getElementById("result10").innerHTML = b * c // math
+    }
+    function divide(a,b) {
+        document.getElementById("result4").innerHTML = a / b // math
+    }
+    function divide(a,c) {
+        document.getElementById("result11").innerHTML = a / c // math
+    }
+    function divide(b,c) {
+        document.getElementById("result12").innerHTML = b / c // math
+    }
+    // variables are defined
+    var a = 13
+    var b = 12
+    var c = 6
+</script>
+</div>
+</div>
+</div>
 </div>
 
 
