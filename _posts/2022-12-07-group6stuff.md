@@ -1,9 +1,9 @@
 ---
 keywords: fastai
-title: Unit 3.9 & 3.11 Notes and Hacks
+title: Unit 3.9 & 3.11 Selection, Sequences, and Iterations
 toc: true
 badges: true
-categories: [Week 15]
+categories: [Student Teaching]
 nb_path: _notebooks/2022-12-07-group6stuff.ipynb
 layout: notebook
 ---
