@@ -20,4 +20,4 @@ Here you can see that I am trying to use event listeners within the dropdown men
 
 ![]({{ site.baseurl }}/images/css.png "Code")
 
-Here you can see that for the dropdowns, I have been able to inplement css within each dropdown. Using opacity also helps the user see information behind the dropdown without compromising button space.
+Here you can see that for the dropdowns, I have been able to implement css within each dropdown. Using opacity also helps the user see information behind the dropdown without compromising button space.
