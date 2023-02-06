@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: Stuff
-categories: [Questions]
+categories: [Big Ideas]
 title: Reflection Questions
 ---
 
