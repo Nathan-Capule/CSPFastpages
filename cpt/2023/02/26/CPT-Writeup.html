@@ -79,7 +79,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      1 min read
+      4 min read
     
 </span></p>
 
@@ -107,8 +107,27 @@ window.onload = wrap_img;
 <ul>
 <li class="toc-entry toc-h3"><a href="#3bi">3.b.i:</a></li>
 <li class="toc-entry toc-h3"><a href="#3bii">3.b.ii</a></li>
+<li class="toc-entry toc-h3"><a href="#3biv">3.b.iv.</a></li>
+<li class="toc-entry toc-h3"><a href="#3bv">3.b.v.</a></li>
 </ul>
 </li>
+<li class="toc-entry toc-h2"><a href="#3c">3.C</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#3ci">3.C.i</a></li>
+<li class="toc-entry toc-h3"><a href="#procedure">Procedure:</a></li>
+<li class="toc-entry toc-h3"><a href="#call">Call:</a></li>
+<li class="toc-entry toc-h3"><a href="#3cii">3.c.ii</a></li>
+<li class="toc-entry toc-h3"><a href="#3civ">3.c.iv.</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#3d">3.d.</a>
+<ul>
+<li class="toc-entry toc-h3"><a href="#3di">3.d.i</a></li>
+<li class="toc-entry toc-h3"><a href="#3dii">3.d.ii.</a></li>
+<li class="toc-entry toc-h3"><a href="#3diii">3.d.iii</a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h2"><a href="#what-i-learnedstruggles">What I learned/Struggles</a></li>
 </ul><h2 id="3a">
 <a class="anchor" href="#3a" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.a:</h2>
 
@@ -145,6 +164,81 @@ window.onload = wrap_img;
 
 <h3 id="3bii">
 <a class="anchor" href="#3bii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.ii</h3>
+
+<p><img src="/CSPFastpages/images/3.b.ii2.png" alt="" title="3.b.ii"></p>
+
+<p>I have a collection method in which the data scored includes the workout, the number of sets, and the number of reps. All of this data is stored within a table called “users”. This data can be deleted through a function that resets all data. I am working on adding an update function that would allow users to edit workouts, this is just a personal project though as I was not able to figure out how to complete it within the timeframe of this assignment.</p>
+
+<h3 id="3biv">
+<a class="anchor" href="#3biv" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.iv.</h3>
+
+<p>The data that is stored are workouts, sets, and reps. This data can be stored as strings, so teh inputs can be either words such as “pushups” for the workout category, or numbers such as “10” for the number of sets.</p>
+
+<h3 id="3bv">
+<a class="anchor" href="#3bv" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.b.v.</h3>
+
+<p>The database is able to manage complexity as it is able to take the users inputs, format it into a table, and store the information. Without the database, the inputs by the user would be lost every time they refreshed the page. Without the database, this program would be useless.</p>
+
+<h2 id="3c">
+<a class="anchor" href="#3c" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.C</h2>
+
+<h3 id="3ci">
+<a class="anchor" href="#3ci" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.C.i</h3>
+<h3 id="procedure">
+<a class="anchor" href="#procedure" aria-hidden="true"><span class="octicon octicon-link"></span></a>Procedure:</h3>
+<p><img src="/CSPFastpages/images/3.c.i.png" alt="" title="3.c.i"></p>
+<h3 id="call">
+<a class="anchor" href="#call" aria-hidden="true"><span class="octicon octicon-link"></span></a>Call:</h3>
+<p><img src="/CSPFastpages/images/call1.png" alt="" title="call">
+<img src="/CSPFastpages/images/call2.png" alt="" title="call">
+<img src="/CSPFastpages/images/call3.png" alt="" title="call">
+<img src="/CSPFastpages/images/call4.png" alt="" title="call"></p>
+
+<h3 id="3cii">
+<a class="anchor" href="#3cii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.ii</h3>
+
+<p><img src="/CSPFastpages/images/3.c.ii.png" alt="" title="3.c.ii">
+<img src="/CSPFastpages/images/3.c.iii.png" alt="" title="3.c.ii"></p>
+
+<p>There are two functions here, a create function and a read function.</p>
+
+<p>The create function will create a new row in the. From the user’s inputs, it will add a workout, the number of reps, and the number of sets. This will then be stored in the database to be retrieved later.</p>
+
+<p>The read function is what will display the data. After fetching the data from the database, the read function will then be able to display the data in the frontend in a neat manner, this allows for the user to see the stored data. This means that we do not need a create function to see the data, we just need to have the data already in the database and have a read function to display it.</p>
+
+<h3 id="3civ">
+<a class="anchor" href="#3civ" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.c.iv.</h3>
+
+<p>Sequence: I used sequencing in my code by adding a create function. First, it will get all the data from the user’s inputs, and then it will display them in the table below. This is a sequence as the code goes in sequential order.</p>
+
+<p>Selection: I had a selection within my code through the submit button. This button would only take data that was within the textbox, so there were two options. Either the data would be entered, or it would display an error message and have the user fill out all boxes.</p>
+
+<p>Iteration: I had a function that would keep trying to display the inputted information until all data is printed. I completed this using a for loop in which for each piece of data, the function will input the data until all data has been added.</p>
+
+<h2 id="3d">
+<a class="anchor" href="#3d" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.</h2>
+
+<h3 id="3di">
+<a class="anchor" href="#3di" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.i</h3>
+
+<p>My first call can be seen when you click submit, it calls the data into the backend to be stored. This data is then turned into json data which can be grabbed later. The backend fetches the data from the frontend (the users inputs).</p>
+
+<p>My second call is when you add the row, it will fetch the data from the backend, which stores all the data. This JSON data is then changed back into data that can be presented neatly within the table.</p>
+
+<h3 id="3dii">
+<a class="anchor" href="#3dii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.ii.</h3>
+
+<p>The first call just tests to make sure that there is actually data present before being sent to the database. My second call tests to make sure that there is actually data to be outputted into the table.</p>
+
+<h3 id="3diii">
+<a class="anchor" href="#3diii" aria-hidden="true"><span class="octicon octicon-link"></span></a>3.d.iii</h3>
+
+<p>The result of the first call is sending data to the database, we can see that from the first call that when data is added, the database is populated with information. The result of the second call is printing the data that the user inputted into a table below the input boxes.</p>
+
+<h2 id="what-i-learnedstruggles">
+<a class="anchor" href="#what-i-learnedstruggles" aria-hidden="true"><span class="octicon octicon-link"></span></a>What I learned/Struggles</h2>
+
+<p>This was actually very difficult for me, I struggled to create a fulls tack. After getting help from multiple people, I was finally able to understand how to create a full stack and how I can use this in the future. It was a very good learning experience for me just not as a student but also as a person. There is more than one way to solve a problem and it is okay to get help from others. That is probably a lesson that I learned in this class that no other class has ever tried to teach me.</p>
 
   </div><a class="u-url" href="/CSPFastpages/cpt/2023/02/26/CPT-Writeup.html" hidden></a>
 </article>
