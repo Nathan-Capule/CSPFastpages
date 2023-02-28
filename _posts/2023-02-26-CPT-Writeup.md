@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: What the title said
 categories: [CPT]
-title: CPT WRiteup
+title: CPT Writeup
 ---
 
 ## 3.a:
