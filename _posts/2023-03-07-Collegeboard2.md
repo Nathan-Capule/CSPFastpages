@@ -35,3 +35,7 @@ I was not thinking and just chose the option that had the smallest final values.
 
 ## What I learned
 I learned the importance of checking my work. These questions could have easily been correct if I just read them properly. I also need to work more on understanding the weird arrows that collegeboard uses so that I do not make any stupid mistakes when taking the actual AP test. Throughout this trimester I think that I have learned more about how data was stored, I used to think that it was somehow just sent to a database and could be grabbed easily. But now I know more about API's and how they function which affect me now as I am able to understand more questions from collegeboard.
+
+- ## What to work on
+    * ### Skill 4.B: Determine the result of code segments.
+    * ### Skill 1.D: Evaluate solution options.
