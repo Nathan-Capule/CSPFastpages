@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: What the title said
 categories: [CPT]
-title: Collegeboard Big Idea Quiz 2 Corrections
+title: CSUSM Notes
 ---
 
 # Stem at CSUM
