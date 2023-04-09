@@ -48,7 +48,7 @@ layout: notebook
 <span class="c1"># Question 2</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Which of the following procedures would rotate the pipe into the correct position?&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;A. Rotate right AND rotate left&quot;</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B. Rotate right x3 OR rotate left&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;B. Rotate right x3 OR rotate left&quot;</span><span class="p">)</span>  
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;C. Rotate right THEN rotate left&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;D. Rotate right x3&quot;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;E. None of these answers&quot;</span><span class="p">)</span>
