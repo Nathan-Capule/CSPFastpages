@@ -26,14 +26,14 @@ fi
 MESSAGE=$1
 
 ## Set Vars
-URI=https://api.github.com
-API_VERSION=v3
-API_HEADER="Accept: application/vnd.github.${API_VERSION}+json"
+URI=https://.github.com
+_VERSION=v3
+_HEADER="Accept: application/vnd.github.${_VERSION}+json"
 AUTH_HEADER="Authorization: token ${GITHUB_TOKEN}"
 
-# Create a comment with APIv3 # POST /repos/:owner/:repo/issues/:issue_number/comments
+# Create a comment with v3 # POST /repos/:owner/:repo/issues/:issue_number/comments
 curl -XPOST -sSL \
     -d "{\"body\": \"$MESSAGE\"}" \
     -H "${AUTH_HEADER}" \
-    -H "${API_HEADER}" \
+    -H "${_HEADER}" \
     "${URI}/repos/${GITHUB_REPOSITORY}/issues/${ISSUE_NUMBER}/comments"
