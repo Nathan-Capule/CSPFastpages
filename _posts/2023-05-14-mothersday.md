@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description:  I love you mom
-categories: [misc]
+categories: [CPT]
 title: Happy Mothers Day
 ---
 
